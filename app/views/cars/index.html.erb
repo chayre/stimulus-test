@@ -9,6 +9,13 @@
       <%= link_to "Show this car", car %>
     </p>
   <% end %>
+
 </div>
 
 <%= link_to "New car", new_car_path %>
+
+
+<div data-controller="hello">
+  <input data-hello-target="name" type="text">
+  <button data-action="click->hello#greet">Greet</button>
+</div>
