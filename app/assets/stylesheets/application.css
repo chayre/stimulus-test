@@ -33,3 +33,12 @@
  [class="hide show"] {
     display: initial;
   }
+
+  .highlight {
+      background-color: aqua;
+  }
+
+  .box {
+      margin-top: 2rem;
+      width: 4rem;
+  }

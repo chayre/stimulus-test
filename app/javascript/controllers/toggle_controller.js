@@ -2,9 +2,9 @@ import { Controller } from "@hotwired/stimulus"
 
 export default class extends Controller {
   // Reference the "show" class that will be added to the element
-  static classes = [ "show", "hide" ]
+  static classes = [ "show", "hide", "highlight" ]
   // Reference the target text
-  static targets = [ "text", "one", "two" ]
+  static targets = [ "text", "one", "two", "checkbox" ]
 
  
 
@@ -16,5 +16,9 @@ export default class extends Controller {
   switch() {
     this.oneTarget.classList.toggle(this.hideClass);
     this.twoTarget.classList.toggle(this.showClass);
+  }
+
+  highlight() {
+    this.checkboxTarget.classList.toggle(this.highlightClass);
   }
 }
