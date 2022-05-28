@@ -21,3 +21,15 @@
   .clipboard--supported .clipboard-button {
     display: initial;
   }
+
+ .hide {
+     display: none;
+ }
+
+ [class="show hide"] {
+     display: none;
+ }
+
+ [class="hide show"] {
+    display: initial;
+  }

@@ -20,7 +20,15 @@
 </div>
 <br>
 
-<div data-controller="clipboard" data-clipboard-supported-class="clipboard--supported">
-  PIN: <br> <input data-clipboard-target="source" type="text" value="1234" readonly>
-  <button data-action="clipboard#copy" class="clipboard-button">Copy to Clipboard</button>
+
+<div data-controller="toggle" data-toggle-show-class="show">
+  <button class="btn" data-action="toggle#show">Toggle</button>
+  <div class="hide" data-toggle-target="text">You toggled me!</div>
+</div>
+<br>
+
+<div data-controller="toggle" data-toggle-hide-class="hide" data-toggle-show-class="show">
+  <button class="show" data-action="toggle#switch" data-toggle-target="one">One</button>
+  <div>Up and down</div>
+  <button class="hide" data-action="toggle#switch" data-toggle-target="two">And two</btn>
 </div>
