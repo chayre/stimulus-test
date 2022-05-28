@@ -11,11 +11,15 @@
   <% end %>
 
 </div>
-
 <%= link_to "New car", new_car_path %>
-
-
+<br>
+<br>
 <div data-controller="hello">
   <input data-hello-target="name" type="text">
   <button data-action="click->hello#greet">Greet</button>
+</div>
+<br>
+<div data-controller="clipboard">
+  PIN: <br> <input data-clipboard-target="source" type="text" value="1234" readonly>
+  <button data-action="clipboard#copy">Copy to Clipboard</button>
 </div>
