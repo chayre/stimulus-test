@@ -12,5 +12,6 @@
 #  updated_at              :datetime         not null
 #
 class Variant < ApplicationRecord
+  # Each variant belongs to a car (manufacturer). Referenced via foreign key
   belongs_to :car
 end
