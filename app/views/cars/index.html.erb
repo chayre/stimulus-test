@@ -33,6 +33,13 @@
   <button class="hide" data-action="toggle#switch" data-toggle-target="two">And two</btn>
 </div>
 
+<br>
 <div class="box" data-controller="toggle" data-toggle-highlight-class="highlight" data-toggle-target="checkbox">
   <input type="checkbox" data-action="toggle#highlight">
+</div>
+
+<br>
+<div class="box" data-controller="textwarn" data-textwarn-red-class="red">
+  <textarea type="textarea" data-action="textwarn#warn" data-textwarn-target="text"></textarea>
+  <p class="" data-textwarn-target="length">0/280 characters</p>
 </div>
