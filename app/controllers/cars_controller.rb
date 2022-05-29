@@ -20,7 +20,7 @@ class CarsController < ApplicationController
     params
       .require(:car)
        .permit(
-         variants_attributes: [:id, :_destroy, :model]
+         variants_attributes: [:_destroy, :id, :model]
        )
   end
 end

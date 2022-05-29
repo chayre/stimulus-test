@@ -1,32 +1,3 @@
-<p style="color: green"><%= notice %></p>
-
-<h1>Cars</h1>
-
-<%= form_with model: @user, data: { controller: 'nested-form', nested_form_wrapper_selector_value: '.nested-form-wrapper' } do |f| %>
-  <template data-nested-form-target="template">
-    <%= f.fields_for :variants, Variant.new, child_index: 'NEW_RECORD' do |variant_fields| %>
-      <%= render "variant_form", f: variant_fields %>
-    <% end %>
-  </template>
-
-  <%= f.fields_for :variants do |variant_fields| %>
-    <%= render "variant_form", f: variant_fields %>
-  <% end %>
-
-  <!-- Inserted elements will be injected before that target. -->
-  <div data-nested-form-target="target"></div>
-
-  <button type="button" data-action="nested-form#add">Add variant</button>
-
-  <%= f.submit 'Save manufacturer variant' %>
-<% end %>
-
-<div id="cars">
-  <% @cars.each do |car| %>
-    <%= render car %>
-  <% end %>
-</div>
-
 
 <br>
 <br>
