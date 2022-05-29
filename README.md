@@ -1,24 +1,3 @@
-# README
+# Stimulus Testing
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Stimulus is a JavaScript framework with modest ambitions. I'm playing around with it here to manipulate the DOM by using JavaScript controllers. The features I made here to practice with Stimulus: toggle display upon event, toggle styles upon event, and warn user when they've typed too many characters in a text area.
